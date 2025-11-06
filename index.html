@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Chooser Modal (appears on first visit) -->
+    <div id="languageModal" class="language-modal hidden">
+        <div class="language-modal-content">
+            <h2 class="language-modal-title" data-i18n="choose-language">Choose Your Language</h2>
+            <p class="language-modal-subtitle" data-i18n="choose-language-subtitle">Выберите язык / Tilni tanlang</p>
+            <div class="language-options">
+                <button class="language-option" data-lang="en">
+                    <span class="language-flag">🇬🇧</span>
+                    <span class="language-name">English</span>
+                </button>
+                <button class="language-option" data-lang="ru">
+                    <span class="language-flag">🇷🇺</span>
+                    <span class="language-name">Русский</span>
+                </button>
+                <button class="language-option" data-lang="uz">
+                    <span class="language-flag">🇺🇿</span>
+                    <span class="language-name">O'zbek</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Train Booking Warning Modal -->
+    <div id="trainBookingModal" class="train-booking-modal hidden">
+        <div class="train-booking-modal-content">
+            <button id="trainBookingClose" class="train-booking-close" aria-label="Close">×</button>
+            <div class="train-booking-icon">🚂</div>
+            <h2 class="train-booking-modal-title" data-i18n="train-booking-title">Train Ticket Booking</h2>
+            <div class="train-booking-warning-box">
+                <div class="warning-icon">⚠️</div>
+                <p class="train-booking-warning-text" data-i18n="train-booking-warning-modal">
+                    Please make sure to select:<br>
+                    <strong>Toshkent - Termiz</strong> direction<br>
+                    and choose a date <strong>before November 18</strong>
+                </p>
+            </div>
+            <div class="train-booking-modal-buttons">
+                <button id="trainBookingProcess" class="train-booking-btn train-booking-btn-process" data-i18n="process">Process</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="invitation-wrapper">
+        <!-- Background Decorative Elements -->
+        <div class="bg-decoration top-left-corner"></div>
+        <div class="bg-decoration top-right-corner"></div>
+        <div class="bg-decoration bottom-left-corner"></div>
+        <div class="bg-decoration bottom-right-corner"></div>
+        
+        <div class="invitation-card">
+            <!-- Decorative Frame -->
+            <div class="decorative-frame"></div>
+            
+            <!-- Beautiful Corner Decorations -->
+            <div class="corner-decoration corner-top-left"></div>
+            <div class="corner-decoration corner-top-right"></div>
+            <div class="corner-decoration corner-bottom-left"></div>
+            <div class="corner-decoration corner-bottom-right"></div>
+            
+            <!-- Main Content -->
+            <div class="content">
+                <!-- Header -->
+                <div class="header-section">
+                    <p class="invitation-text" data-i18n="invitation-text">Together with their families</p>
+                    <p class="invitation-subtext initial-animate-bottom-text" data-i18n="invitation-subtext">request the pleasure of your company<br>at the celebration of their wedding</p>
+                </div>
+
+                <!-- Couple Names -->
+                <div class="names-section initial-animate-names">
+                    <h1 class="name name-first">Samandar</h1>
+                    <div class="and-symbol">&</div>
+                    <h1 class="name name-second">Nodirabegim</h1>
+                </div>
+
+                <!-- Decorative Divider -->
+                <div class="divider scroll-fade-in">
+                    <div class="divider-line left"></div>
+                    <div class="divider-ornament">
+                        <div class="ornament-flower">✦</div>
+                        <div class="ornament-vine"></div>
+                    </div>
+                    <div class="divider-line right"></div>
+                </div>
+
+                <!-- Date Section -->
+                <div class="date-section initial-animate-date">
+                    <div class="date-day" data-i18n="date-day">Tuesday</div>
+                    <div class="date-number">18</div>
+                    <div class="date-month" data-i18n="date-month">November</div>
+                    <div class="date-time" data-i18n="date-time">5:30 PM</div>
+                    <div class="date-year" data-i18n="date-year">2025</div>
+                </div>
+
+                <!-- Decorative Divider -->
+                <div class="divider">
+                    <div class="divider-line left"></div>
+                    <div class="divider-ornament">
+                        <div class="ornament-flower">✦</div>
+                        <div class="ornament-vine"></div>
+                    </div>
+                    <div class="divider-line right"></div>
+                </div>
+
+                <!-- Location Section -->
+                <div class="location-section scroll-animate">
+                    <h2 class="location-title scroll-fade-in scroll-animate-delay-1" data-i18n="location-title">Reception</h2>
+                    <p class="venue-name scroll-fade-in scroll-animate-delay-2" data-i18n="venue-name">Olmos Celebration Palace</p>
+                    <p class="venue-address scroll-fade-in scroll-animate-delay-3" data-i18n="venue-address">Termiz City</p>
+                    <button id="mapButton" class="map-button scroll-scale scroll-animate-delay-4" data-i18n="view-location">View Location</button>
+                    <div id="mapContainer" class="map-container">
+                        <iframe 
+                            id="mapFrame"
+                            class="map-frame"
+                            src=""
+                            style="border:0; width: 100%; height: 400px; min-height: 300px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Transportation Section -->
+                <div class="transportation-section scroll-animate">
+                    <h2 class="section-title scroll-fade-in scroll-animate-delay-1" data-i18n="travel-arrangements">Travel Arrangements</h2>
+                    <div class="booking-cards">
+                        <div class="booking-card scroll-slide-left scroll-animate-delay-2">
+                            <div class="booking-icon">🚂</div>
+                            <h3 class="booking-title" data-i18n="train-tickets">Train Tickets</h3>
+                            <p class="booking-description" data-i18n="train-description">Reserve your train tickets</p>
+                            <a href="#" id="trainBookingLink" class="booking-button" data-i18n="book-now">Book Now</a>
+                        </div>
+                        <div class="booking-card scroll-slide-right scroll-animate-delay-3">
+                            <div class="booking-icon">✈️</div>
+                            <h3 class="booking-title" data-i18n="flight-tickets">Flight Tickets</h3>
+                            <p class="booking-description" data-i18n="flight-description">Reserve your flight</p>
+                            <a href="https://pss.silk-avia.com/ibe/availability?tripType=ONE_WAY&depPort=TAS&arrPort=TMJ&departureDate=18.11.2025&returnDate=18.11.2025&passengerQuantities%5B0%5D%5BpassengerType%5D=ADULT&passengerQuantities%5B0%5D%5BpassengerSubType%5D=&passengerQuantities%5B0%5D%5Bquantity%5D=1&passengerQuantities%5B1%5D%5BpassengerType%5D=CHILD&passengerQuantities%5B1%5D%5BpassengerSubType%5D=&passengerQuantities%5B1%5D%5Bquantity%5D=0&passengerQuantities%5B2%5D%5BpassengerType%5D=INFANT&passengerQuantities%5B2%5D%5BpassengerSubType%5D=&passengerQuantities%5B2%5D%5Bquantity%5D=0&currency=UZS&cabinClass=&lang=UZ&nationality=&promoCode=&accountCode=&affiliateCode=&clickId=&withCalendar=&isMobileCalendar=&market=&isFFPoint=" id="planeBookingLink" class="booking-button" target="_blank" data-i18n="book-now">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Language Switcher (at bottom) -->
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="uz">UZ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
