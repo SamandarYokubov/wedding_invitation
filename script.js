@@ -7,7 +7,7 @@ const translations = {
         'invitation-subtext': 'We joyfully invite you to the celebration of our wedding, join us for love, laughter, and happily ever after',
         'date-day': 'Tuesday',
         'date-month': 'November',
-        'date-time': '5:30 PM',
+        'date-time': '10:00',
         'date-year': '2025',
         'location-title': 'Address',
         'venue-name': 'Olmos Celebration Palace',
@@ -23,16 +23,18 @@ const translations = {
         'process': 'Process',
         'flight-tickets': 'Flight Tickets',
         'flight-description': 'Reserve your flight',
-        'book-now': 'Book Now'
+        'book-now': 'Book Now',
+        'organizers-sincerely': 'Sincerely',
+        'organizers-name': 'Jaxongir Mirzayev'
     },
     ru: {
         'choose-language': 'Выберите язык',
         'choose-language-subtitle': 'Выберите предпочитаемый язык',
         'invitation-text': 'ДОРОГОЙ ГОСТЬ',
-        'invitation-subtext': 'С радостью приглашаем вас отпраздновать нашу свадьбу, присоединяйтесь к нам, чтобы разделить любовь, радость и начало нашей счастливой истории.',
+        'invitation-subtext': 'С радостью приглашаем Вас на мероприятие в честь нашей свадьбы, присоединяйтесь к нам, чтобы разделить любовь, радость и начало нашей счастливой истории.',
         'date-day': 'Вторник',
         'date-month': 'Ноябрь',
-        'date-time': '17:30',
+        'date-time': '10:00',
         'date-year': '2025',
         'location-title': 'Адрес',
         'venue-name': 'Дворец празднования Olmos',
@@ -48,16 +50,18 @@ const translations = {
         'process': 'Продолжить',
         'flight-tickets': 'Авиабилеты',
         'flight-description': 'Забронируйте авиабилеты',
-        'book-now': 'Забронировать'
+        'book-now': 'Забронировать',
+        'organizers-sincerely': 'С уважением',
+        'organizers-name': 'Жахонгир Мирзаев'
     },
     uz: {
         'choose-language': 'Tilni tanlang',
         'choose-language-subtitle': 'Qulay tilni tanlang',
         'invitation-text': 'AZIZ MEHMONIMIZ',
-        'invitation-subtext': 'Yuragimizdagi cheksiz quvonch ila sizni bizning nikoh tantanamizga taklif etamiz',
+        'invitation-subtext': 'Yuragimizdagi cheksiz quvonch ila sizni bizning nikoh to\'yimiz munosabati bilan bo\'lib o\'tadigan tadbirimizga taklif etamiz',
         'date-day': 'Seshanba',
         'date-month': 'Noyabr',
-        'date-time': '17:30',
+        'date-time': '10:00',
         'date-year': '2025',
         'location-title': 'Manzil',
         'venue-name': 'Olmos tantanalar saroyi',
@@ -73,7 +77,9 @@ const translations = {
         'process': 'Davom etish',
         'flight-tickets': 'Aviabiletlar',
         'flight-description': 'Aviabiletlarni bron qiling',
-        'book-now': 'Bron qilish'
+        'book-now': 'Bron qilish',
+        'organizers-sincerely': 'Hurmat va ehtirom ila',
+        'organizers-name': 'Jaxongir Mirzayevlar xonadoni'
     }
 };
 
