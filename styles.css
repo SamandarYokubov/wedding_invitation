@@ -701,36 +701,6 @@ body {
     border: none;
 }
 
-/* Organizers Section */
-.organizers-section {
-    margin: 50px 0;
-    text-align: center;
-}
-
-.organizers-sincerely {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #8b7355;
-    letter-spacing: 2px;
-    font-style: italic;
-    margin: 0 0 10px 0;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-}
-
-.organizers-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #8b7355;
-    letter-spacing: 2px;
-    font-style: italic;
-    margin: 0;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-}
-
 /* Transportation Section */
 .transportation-section {
     margin: 50px 0;

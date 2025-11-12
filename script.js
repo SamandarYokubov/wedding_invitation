@@ -23,9 +23,7 @@ const translations = {
         'process': 'Process',
         'flight-tickets': 'Flight Tickets',
         'flight-description': 'Reserve your flight',
-        'book-now': 'Book Now',
-        'organizers-sincerely': 'Sincerely',
-        'organizers-name': 'Muzaffar Mahmudov'
+        'book-now': 'Book Now'
     },
     ru: {
         'choose-language': 'Выберите язык',
@@ -50,9 +48,7 @@ const translations = {
         'process': 'Продолжить',
         'flight-tickets': 'Авиабилеты',
         'flight-description': 'Забронируйте авиабилеты',
-        'book-now': 'Забронировать',
-        'organizers-sincerely': 'С уважением',
-        'organizers-name': 'Музаффар Махмудов'
+        'book-now': 'Забронировать'
     },
     uz: {
         'choose-language': 'Tilni tanlang',
@@ -77,9 +73,7 @@ const translations = {
         'process': 'Davom etish',
         'flight-tickets': 'Aviabiletlar',
         'flight-description': 'Aviabiletlarni bron qiling',
-        'book-now': 'Bron qilish',
-        'organizers-sincerely': 'Hurmat va ehtirom ila',
-        'organizers-name': 'Muzaffar Mahmudovlar xonadoni'
+        'book-now': 'Bron qilish'
     }
 };
 
