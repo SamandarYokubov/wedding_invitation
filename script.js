@@ -25,7 +25,7 @@ const translations = {
         'flight-description': 'Reserve your flight',
         'book-now': 'Book Now',
         'organizers-sincerely': 'Sincerely',
-        'organizers-name': 'Jaxongir Mirzayev'
+        'organizers-name': 'Muzaffar Mahmudov'
     },
     ru: {
         'choose-language': 'Выберите язык',
@@ -52,7 +52,7 @@ const translations = {
         'flight-description': 'Забронируйте авиабилеты',
         'book-now': 'Забронировать',
         'organizers-sincerely': 'С уважением',
-        'organizers-name': 'Жахонгир Мирзаев'
+        'organizers-name': 'Музаффар Махмудов'
     },
     uz: {
         'choose-language': 'Tilni tanlang',
@@ -79,7 +79,7 @@ const translations = {
         'flight-description': 'Aviabiletlarni bron qiling',
         'book-now': 'Bron qilish',
         'organizers-sincerely': 'Hurmat va ehtirom ila',
-        'organizers-name': 'Jaxongir Mirzayevlar xonadoni'
+        'organizers-name': 'Muzaffar Mahmudovlar xonadoni'
     }
 };
 
